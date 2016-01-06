@@ -216,12 +216,12 @@ module.exports = function (grunt) {
         ngtemplates: {
             dist: {
                 options: {
-                    module: 'TodoApp',
+                    module: 'angularApp',
                     htmlmin: '<%= htmlmin.dist.options %>',
                     usemin: 'scripts/app.js'
                 },
                 cwd: '<%= directory.app %>',
-                src: 'source/{,*/}*.html',
+                src: 'source/**/*.html',
                 dest: '.tmp/templateCache.js'
             }
         },
@@ -317,7 +317,7 @@ module.exports = function (grunt) {
                 options: {
                     jshintrc: 'test/.jshintrc'
                 },
-                src: ['app/source/**/*.spec.js', 'test/e2e_test/**/*.js']
+                src: ['app/source/**/*.spec.js', 'test/e2e/**/*.js']
             }
         },
 
