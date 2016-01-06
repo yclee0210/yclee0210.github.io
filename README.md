@@ -31,7 +31,11 @@
                 template.controller.js
                 template.controller.spec.js
               footer/
-              shell/
+              shell.html
+              shell.constants.js
+              shell.routes.js
+              shell.controller.js
+              shell.controller.spec.js
             widgets/
               widget1/
                 template.html
