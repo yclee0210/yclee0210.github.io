@@ -12,8 +12,10 @@
       $stateProvider
         .state('app', {
           url: '',
-          templateUrl: 'global/layout/shell.html'
+          templateUrl: 'source/global/layout/shell.html',
+          controller: 'ShellController',
+          controllerAs: 'vm',
+          defaultChild: 'app.main'
         });
     });
-
 })();
