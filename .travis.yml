@@ -1,0 +1,26 @@
+branches:
+  only:
+    - develop
+sudo: false
+language: node_js
+node_js:
+  - '4.2'
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+before_install:
+  - 'npm install -g bower grunt-cli'
+install:
+  - 'npm install'
+before_script:
+  - 'bower install'
+script: ./deploy.sh
+env:
+  global:
+  - GH_REF: github.com/yclee0210/yclee0210.github.io.git
+  - secure: "UIT8Mgt4pYptQjccOZr8F/Z9ZJ8LfQi7jjQ7OFv/3ToNjlvWJJSMTG10XkQaqfeuSMZB5+HvLQEbxPevHhmwrLYlKjOKrTfvPUjyhiZj6JXj1PBGQFYtHUwvrNehSIJ2WyKI3o3OSD9TRh+zRZSmXCe0HyVZrehvTcDkR8Di6wMEhEosM7CSgvQu1k4HhOeLpoqhD6QErNPGjVUPH0zovQ9kXCfVOBK9z5szcB4/Z8dMa2n5jsymnEayF7oT1BNA+qKhmBZQZDJsvk4MMgHP9vPrd2Bcqyh9mZEqR5Y27iRSUInJHZQT22k0YaMtSWFbMphuf5FGRvSJIdb+0S1A2lpHwPbFRmWlHmCQlfbb6pMlH/y4OekBmGh/GFVnY1bpYYTm0A070MExPnhSic3bwKY/BV14txX7zPbxzruhVYorM2HGb8NmaGLscjrGi8KRSEookuwYQ7DCm842Lt6rW1q4r9AxxO8RpcImkZaaxAuA6X73KVMopJTZaFUbyDobhij9YfaEUBdhtA70M0o0z1Ni9Muj8BLkpgCW7emXgAdEGNZVy3QtgFJSj2mZwWF46s/m4Un+C5RwiiNuoMaDMvU2TCeb96wKcJTtQH1L5jvd6X9gdiEJIKNhBlNfOY76C2SQTzRVQlKrcVO9Pt3Xvkww1xZYx07+SP4J7nSuy0Y="
