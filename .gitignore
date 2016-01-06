@@ -1,7 +1,9 @@
+
+*.iml
 .idea/
 node_modules/
 bower_components/
-dist/
-test/results/
 test/coverage/
+test/results/
+dist/
 .tmp/
