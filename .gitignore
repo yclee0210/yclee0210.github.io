@@ -6,4 +6,3 @@ test/coverage/
 test/results/
 dist/
 .tmp/
-.sass-cache/
