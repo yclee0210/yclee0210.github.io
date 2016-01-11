@@ -1,9 +1,10 @@
-
 *.iml
 .idea/
 node_modules/
 bower_components/
+/app/.sass-cache
 test/coverage/
 test/results/
 dist/
 .tmp/
+.sass-cache/

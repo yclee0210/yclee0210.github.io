@@ -1,17 +1,12 @@
 {
-  "name": "angular-scaffold",
+  "name": "yclee0210",
+  "description": "Github Page - yclee0210",
   "appPath": "app",
   "moduleName": "angularApp",
-  "description": "Basic Scaffolding for AngularJS project incorporating John Papa's Styleguide",
   "authors": [
     "Clemence Yun Chan Lee"
   ],
   "license": "MIT",
-  "keywords": [
-    "scaffolding",
-    "angularJS",
-    "template"
-  ],
   "homepage": "https://github.com/yclee0210/yclee0210.github.io",
   "private": true,
   "dependencies": {

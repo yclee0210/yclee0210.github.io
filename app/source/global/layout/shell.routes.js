@@ -8,10 +8,10 @@
   angular
     .module('angularApp')
     .config(function ($stateProvider, $urlRouterProvider) {
-      $urlRouterProvider.otherwise('/main');
+      $urlRouterProvider.otherwise('/app');
       $stateProvider
         .state('app', {
-          url: '',
+          url: '/app',
           templateUrl: 'source/global/layout/shell.html',
           controller: 'ShellController',
           controllerAs: 'vm',

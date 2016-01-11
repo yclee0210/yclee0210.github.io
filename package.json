@@ -1,7 +1,7 @@
 {
-  "name": "angular-scaffold",
+  "name": "yclee0210",
   "version": "0.0.1",
-  "description": "Basic Scaffolding for AngularJS project incorporating John Papa's Styleguide",
+  "description": "Github Page - yclee0210",
   "scripts": {
     "test": "grunt test"
   },
@@ -9,11 +9,6 @@
     "type": "git",
     "url": "git+https://github.com/yclee0210/yclee0210.github.io.git"
   },
-  "keywords": [
-    "scaffolding",
-    "angularJS",
-    "template"
-  ],
   "author": "Clemence Yun Chan Lee",
   "bugs": {
     "url": "https://github.com/yclee0210/yclee0210.github.io/issues"
