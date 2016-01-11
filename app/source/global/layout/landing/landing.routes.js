@@ -10,7 +10,7 @@
     .config(function ($stateProvider) {
       $stateProvider
         .state('landing', {
-          url: '/welcome',
+          url: '',
           templateUrl: 'source/global/layout/landing/landing.html'
         });
     });
