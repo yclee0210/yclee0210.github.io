@@ -4,8 +4,9 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "global/base";
 @import "global/font";
-@import "global/widgets/card-menu/card-menu";
+@import "global/layout/landing/landing";
 body {
   font-weight: normal;
   font-size: $body-font-size-base;

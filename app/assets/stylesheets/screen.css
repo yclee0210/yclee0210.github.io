@@ -67,16 +67,201 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 7, ../../source/screen.scss */
+/* line 1, ../../source/global/_base.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 54, ../../source/global/_font.scss */
+html, body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 67, ../../source/global/_font.scss */
+ul, ol, p, h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+}
+
+/************
+ * Headings
+ ************/
+/* line 74, ../../source/global/_font.scss */
+.md-display-4 {
+  font-size: 112px;
+  font-weight: 300;
+  letter-spacing: -0.010em;
+  line-height: 112px;
+}
+
+/* line 80, ../../source/global/_font.scss */
+.md-display-3 {
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  line-height: 56px;
+}
+
+/* line 86, ../../source/global/_font.scss */
+.md-display-2 {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+/* line 91, ../../source/global/_font.scss */
+.md-display-1 {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/* line 96, ../../source/global/_font.scss */
+.md-headline {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+/* line 101, ../../source/global/_font.scss */
+.md-title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+
+/* line 104, ../../source/global/_font.scss */
+.md-subhead {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.010em;
+  line-height: 24px;
+}
+
+/************
+ * Body Copy
+ ************/
+/* line 110, ../../source/global/_font.scss */
+.md-body-1 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.010em;
+  line-height: 20px;
+}
+
+/* line 113, ../../source/global/_font.scss */
+.md-body-2 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.010em;
+  line-height: 24px;
+}
+
+/* line 116, ../../source/global/_font.scss */
+.md-caption {
+  font-size: 12px;
+  letter-spacing: 0.020em;
+}
+
+/* line 120, ../../source/global/_font.scss */
+.md-button {
+  letter-spacing: 0.010em;
+}
+
+/************
+ * Defaults
+ ************/
+/* line 128, ../../source/global/_font.scss */
+button,
+select,
+html,
+textarea,
+input {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* line 136, ../../source/global/_font.scss */
+select,
+button,
+textarea,
+input {
+  font-size: 100%;
+}
+
+/* line 5, ../../source/global/layout/landing/_landing.scss */
+.landing-page {
+  background-image: url("");
+  text-align: center;
+  padding-top: 324px;
+}
+@media (max-width: 1280px) {
+  /* line 5, ../../source/global/layout/landing/_landing.scss */
+  .landing-page {
+    padding-top: 288px;
+  }
+}
+@media (min-width: 1920px) {
+  /* line 5, ../../source/global/layout/landing/_landing.scss */
+  .landing-page {
+    padding-top: 432px;
+  }
+}
+/* line 16, ../../source/global/layout/landing/_landing.scss */
+.landing-page h1:first-child {
+  margin-bottom: 56px;
+}
+/* line 19, ../../source/global/layout/landing/_landing.scss */
+.landing-page + footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  background: transparent;
+}
+/* line 26, ../../source/global/layout/landing/_landing.scss */
+.landing-page + footer .button-set-icon {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: 15%;
+}
+/* line 31, ../../source/global/layout/landing/_landing.scss */
+.landing-page + footer .button-set-icon button {
+  margin: 0px 5px 0px 5px;
+  border: 0.5px;
+  border-radius: 10%;
+  background: transparent;
+}
+/* line 36, ../../source/global/layout/landing/_landing.scss */
+.landing-page + footer .button-set-icon button a {
+  color: black;
+}
+/* line 40, ../../source/global/layout/landing/_landing.scss */
+.landing-page + footer .button-set-icon button:not(:disabled):hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 47, ../../source/global/layout/landing/_landing.scss */
+.landing-page + footer div:last-child {
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/* line 10, ../../source/screen.scss */
 body {
-  font-family: sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.4;
-  color: gray;
 }
 
-/* line 15, ../../source/screen.scss */
+/* line 16, ../../source/screen.scss */
 .monospace {
   font-family: Monaco, monospace;
   font-weight: normal;
@@ -84,28 +269,22 @@ body {
   line-height: 1.2;
 }
 
-/* line 22, ../../source/screen.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  color: black;
-}
-
-/* line 27, ../../source/screen.scss */
+/* line 23, ../../source/screen.scss */
 .superscript {
   top: -0.5em;
 }
 
-/* line 28, ../../source/screen.scss */
+/* line 24, ../../source/screen.scss */
 .subscript {
   bottom: -0.25em;
 }
 
-/* line 30, ../../source/screen.scss */
+/* line 26, ../../source/screen.scss */
 .block-margins {
   margin: 0.5rem 0 1rem;
 }
 
-/* line 34, ../../source/screen.scss */
+/* line 30, ../../source/screen.scss */
 .blockquote {
   border-left: 3px solid silver;
   color: DeepPink;
@@ -113,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 }
 
-/* line 41, ../../source/screen.scss */
+/* line 37, ../../source/screen.scss */
 .large-blockquote {
   font-size: 1.3em;
   line-height: 1.4;
