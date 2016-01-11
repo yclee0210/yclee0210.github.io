@@ -4,12 +4,12 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "global/font";
+@import "global/widgets/card-menu/card-menu";
 body {
-  font-family: sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: $body-font-size-base;
   line-height: 1.4;
-  color: gray;
 }
 
 .monospace {
@@ -17,11 +17,6 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.2;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  color: black;
 }
 
 .superscript { top: -0.5em; }
