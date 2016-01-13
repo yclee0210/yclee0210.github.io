@@ -193,29 +193,29 @@ input {
   font-size: 100%;
 }
 
-/* line 5, ../../source/global/layout/landing/_landing.scss */
+/* line 5, ../../source/views/landing/_landing.scss */
 .landing-page {
   background-image: url("");
   text-align: center;
   padding-top: 324px;
 }
 @media (max-width: 1280px) {
-  /* line 5, ../../source/global/layout/landing/_landing.scss */
+  /* line 5, ../../source/views/landing/_landing.scss */
   .landing-page {
     padding-top: 288px;
   }
 }
 @media (min-width: 1920px) {
-  /* line 5, ../../source/global/layout/landing/_landing.scss */
+  /* line 5, ../../source/views/landing/_landing.scss */
   .landing-page {
     padding-top: 432px;
   }
 }
-/* line 16, ../../source/global/layout/landing/_landing.scss */
+/* line 16, ../../source/views/landing/_landing.scss */
 .landing-page h1:first-child {
   margin-bottom: 56px;
 }
-/* line 19, ../../source/global/layout/landing/_landing.scss */
+/* line 19, ../../source/views/landing/_landing.scss */
 .landing-page + footer {
   position: fixed;
   left: 0px;
@@ -224,29 +224,29 @@ input {
   height: 100px;
   background: transparent;
 }
-/* line 26, ../../source/global/layout/landing/_landing.scss */
+/* line 26, ../../source/views/landing/_landing.scss */
 .landing-page + footer .button-set-icon {
   text-align: center;
   width: 100%;
   position: relative;
   top: 15%;
 }
-/* line 31, ../../source/global/layout/landing/_landing.scss */
+/* line 31, ../../source/views/landing/_landing.scss */
 .landing-page + footer .button-set-icon button {
   margin: 0px 5px 0px 5px;
   border: 0.5px;
   border-radius: 10%;
   background: transparent;
 }
-/* line 36, ../../source/global/layout/landing/_landing.scss */
+/* line 36, ../../source/views/landing/_landing.scss */
 .landing-page + footer .button-set-icon button a {
   color: black;
 }
-/* line 40, ../../source/global/layout/landing/_landing.scss */
+/* line 40, ../../source/views/landing/_landing.scss */
 .landing-page + footer .button-set-icon button:not(:disabled):hover {
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 47, ../../source/global/layout/landing/_landing.scss */
+/* line 47, ../../source/views/landing/_landing.scss */
 .landing-page + footer div:last-child {
   position: relative;
   top: 30%;

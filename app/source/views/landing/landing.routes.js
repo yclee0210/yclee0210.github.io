@@ -11,7 +11,7 @@
       $stateProvider
         .state('landing', {
           url: '',
-          templateUrl: 'source/global/layout/landing/landing.html'
+          templateUrl: 'source/views/landing/landing.html'
         });
     });
 })();
