@@ -1,3 +1,58 @@
 * {
   box-sizing: border-box;
 }
+
+/* Layout Constants */
+$cell-unit: 8px;
+
+/* Screen Width */
+$screen-xs: 640px;
+$screen-sm: 960px;
+$screen-md: 1280px;
+$screen-lg: 1920px;
+$screen-xl: 2560px;
+
+/* Mask */
+$mask-light: rgba(0, 0, 0, 0.12);
+$mask-normal: rgba(0, 0, 0, .3);
+$mask-dark: rgba(0, 0, 0, .6);
+
+/* Shadows */
+$shadow-z-1: 0 1px 1.5px rgba(0, 0, 0, .12);
+$shadow-z-2: 0 3px 3px rgba(0, 0, 0, .16);
+$shadow-z-3: 0 10px 10px rgba(0, 0, 0, .19);
+
+/* Common Layout related modules */
+@mixin cover-parent() {
+  position: absolute;
+}
+
+@mixin top-left() {
+  top: 0;
+  left: 0;
+}
+
+@mixin bottom-right() {
+  bottom: 0;
+  right: 0;
+}
+
+/* Application-wide button style */
+button {
+  @extend .md-subhead !optional;
+  background-color: white;
+  border: 0px;
+  border-radius: 4px;
+  padding: 4px 4px 4px 4px;
+}
+button:not(:disabled):hover {
+  background-color: $mask-light;
+}
+button:active {
+  background-color: $mask-normal;
+}
+
+/* Image default fit */
+img {
+  object-fit: cover;
+}
