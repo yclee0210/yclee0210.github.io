@@ -12,6 +12,12 @@
       MEDIUM: {
         URL: 'http://medium.com',
         FEED: '/feed/@yclee0210'
+      },
+      GITHUB: {
+        URL: 'https://api.github.com',
+        USER: '/users',
+        USER_NAME: '/:userName',
+        REPOSITORIES: '/repos'
       }
     })
 
