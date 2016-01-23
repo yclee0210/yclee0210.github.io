@@ -67,11 +67,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../../source/global/_base.scss */
-* {
-  box-sizing: border-box;
-}
-
 /* line 54, ../../source/global/_font.scss */
 html, body {
   -webkit-tap-highlight-color: transparent;
@@ -136,7 +131,7 @@ ul, ol, p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 104, ../../source/global/_font.scss */
-.md-subhead {
+.md-subhead, button {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.010em;
@@ -193,75 +188,238 @@ input {
   font-size: 100%;
 }
 
-/* line 5, ../../source/views/landing/_landing.scss */
-.landing-page {
-  background-image: url("");
-  text-align: center;
-  padding-top: 324px;
+/* line 1, ../../source/global/_base.scss */
+* {
+  box-sizing: border-box;
 }
-@media (max-width: 1280px) {
-  /* line 5, ../../source/views/landing/_landing.scss */
-  .landing-page {
-    padding-top: 288px;
-  }
+
+/* Layout Constants */
+/* Screen Width */
+/* Mask */
+/* Shadows */
+/* Common Layout related modules */
+/* Application-wide button style */
+/* line 41, ../../source/global/_base.scss */
+button {
+  background-color: white;
+  border: 0px;
+  border-radius: 4px;
+  padding: 4px 4px 4px 4px;
 }
-@media (min-width: 1920px) {
-  /* line 5, ../../source/views/landing/_landing.scss */
-  .landing-page {
-    padding-top: 432px;
-  }
+
+/* line 48, ../../source/global/_base.scss */
+button:not(:disabled):hover {
+  background-color: rgba(0, 0, 0, 0.12);
 }
-/* line 16, ../../source/views/landing/_landing.scss */
-.landing-page h1:first-child {
+
+/* line 51, ../../source/global/_base.scss */
+button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Image default fit */
+/* line 56, ../../source/global/_base.scss */
+img {
+  object-fit: cover;
+}
+
+/* line 7, ../../source/views/landing/_landing.scss */
+.grid > div, .grid-20 > div, .grid-25 > div, .grid-33 > div, .grid-50 > div {
+  margin: 0 auto;
+}
+
+/* line 12, ../../source/views/landing/_landing.scss */
+.grid-20 {
+  flex: 12;
+}
+
+/* line 17, ../../source/views/landing/_landing.scss */
+.grid-25 {
+  flex: 15;
+}
+
+/* line 22, ../../source/views/landing/_landing.scss */
+.grid-33 {
+  flex: 20;
+}
+
+/* line 27, ../../source/views/landing/_landing.scss */
+.grid-50 {
+  flex: 30;
+}
+
+/* line 32, ../../source/views/landing/_landing.scss */
+.main, .main-welcome, .main-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 38, ../../source/views/landing/_landing.scss */
+.main-welcome {
+  color: rgba(255, 255, 255, 0.75);
+  background-image: url("https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=786a67dca1d8791d181bfd90b16240d9");
+  background-size: cover;
+  padding-top: 300px;
+  height: 800px;
+}
+/* line 45, ../../source/views/landing/_landing.scss */
+.main-welcome > h1 {
   margin-bottom: 56px;
 }
-/* line 19, ../../source/views/landing/_landing.scss */
-.landing-page + footer {
+
+/* line 50, ../../source/views/landing/_landing.scss */
+.main-projects {
+  padding: 24px;
+  margin-bottom: 100px;
+}
+/* line 53, ../../source/views/landing/_landing.scss */
+.main-projects > h2 {
+  margin-bottom: 56px;
+}
+/* line 57, ../../source/views/landing/_landing.scss */
+.main-projects .project-cards {
+  align-content: space-around;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* line 67, ../../source/views/landing/_landing.scss */
+footer {
   position: fixed;
   left: 0px;
   bottom: 0px;
   width: 100%;
   height: 100px;
-  background: transparent;
+  background: white;
 }
-/* line 26, ../../source/views/landing/_landing.scss */
-.landing-page + footer .button-set-icon {
+/* line 74, ../../source/views/landing/_landing.scss */
+footer .footer-icon-set {
   text-align: center;
   width: 100%;
   position: relative;
   top: 15%;
 }
-/* line 31, ../../source/views/landing/_landing.scss */
-.landing-page + footer .button-set-icon button {
-  margin: 0px 5px 0px 5px;
-  border: 0.5px;
-  border-radius: 10%;
-  background: transparent;
+/* line 79, ../../source/views/landing/_landing.scss */
+footer .footer-icon-set .button-icon {
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 50%;
 }
-/* line 36, ../../source/views/landing/_landing.scss */
-.landing-page + footer .button-set-icon button a {
-  color: black;
+/* line 84, ../../source/views/landing/_landing.scss */
+footer .footer-icon-set .button-icon i {
+  color: rgba(0, 0, 0, 0.6);
 }
-/* line 40, ../../source/views/landing/_landing.scss */
-.landing-page + footer .button-set-icon button:not(:disabled):hover {
-  background: rgba(0, 0, 0, 0.1);
-}
-/* line 47, ../../source/views/landing/_landing.scss */
-.landing-page + footer div:last-child {
+/* line 91, ../../source/views/landing/_landing.scss */
+footer .footer-copyright {
   position: relative;
   top: 30%;
   transform: translateY(-50%);
   text-align: center;
 }
 
-/* line 10, ../../source/screen.scss */
+/* line 13, ../../source/global/widgets/card-list/_card-list.scss */
+.card {
+  width: 320px;
+  height: 100%;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+  background-color: white;
+  transition: 0.1s;
+}
+/* line 20, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-title {
+  width: 100%;
+  height: 96px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+/* line 26, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list {
+  width: 100%;
+  height: 96px;
+  position: relative;
+  color: white;
+}
+/* line 31, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list div {
+  position: absolute;
+  padding: 8px;
+}
+/* line 36, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list .tag-set {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+/* line 40, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list .tag-set .tag {
+  margin-right: 8px;
+  padding: 2px;
+  position: relative;
+  border-radius: 4px;
+}
+/* line 48, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list .text {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+/* line 58, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list .text h2, .card .card-list .text p, .card .card-list .text span {
+  text-align: right;
+}
+/* line 63, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list .text:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 68, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-action-bar {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 320px;
+}
+/* line 74, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-action-bar .button-icon {
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 50%;
+}
+/* line 79, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-action-bar .button-icon i {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 88, ../../source/global/widgets/card-list/_card-list.scss */
+.card:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+
+/* line 12, ../../source/screen.scss */
 body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.4;
 }
 
-/* line 16, ../../source/screen.scss */
+/* line 18, ../../source/screen.scss */
 .monospace {
   font-family: Monaco, monospace;
   font-weight: normal;
@@ -269,22 +427,22 @@ body {
   line-height: 1.2;
 }
 
-/* line 23, ../../source/screen.scss */
+/* line 25, ../../source/screen.scss */
 .superscript {
   top: -0.5em;
 }
 
-/* line 24, ../../source/screen.scss */
+/* line 26, ../../source/screen.scss */
 .subscript {
   bottom: -0.25em;
 }
 
-/* line 26, ../../source/screen.scss */
+/* line 28, ../../source/screen.scss */
 .block-margins {
   margin: 0.5rem 0 1rem;
 }
 
-/* line 30, ../../source/screen.scss */
+/* line 32, ../../source/screen.scss */
 .blockquote {
   border-left: 3px solid silver;
   color: DeepPink;
@@ -292,9 +450,14 @@ body {
   font-style: italic;
 }
 
-/* line 37, ../../source/screen.scss */
+/* line 39, ../../source/screen.scss */
 .large-blockquote {
   font-size: 1.3em;
   line-height: 1.4;
   margin: 2rem 0;
+}
+
+/* line 45, ../../source/screen.scss */
+a {
+  color: black;
 }

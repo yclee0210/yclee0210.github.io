@@ -8,7 +8,7 @@
   angular
     .module('angularApp')
     .config(function ($stateProvider, $urlRouterProvider) {
-      $urlRouterProvider.otherwise('/app');
+      $urlRouterProvider.otherwise('/app/main');
       $stateProvider
         .state('app', {
           url: '/app',
