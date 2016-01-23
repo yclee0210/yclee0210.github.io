@@ -7,15 +7,14 @@
 
   angular
     .module('angularApp')
-    .config(function ($stateProvider, $urlRouterProvider) {
-      $urlRouterProvider.otherwise('/app/main');
+    .config(function ($stateProvider) {
       $stateProvider
         .state('app', {
           url: '/app',
           templateUrl: 'source/global/layout/shell.html',
           controller: 'ShellController',
           controllerAs: 'vm',
-          defaultChild: 'app.main'
+          defaultChild: 'app.playground'
         });
     });
 })();
