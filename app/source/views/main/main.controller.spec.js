@@ -8,8 +8,8 @@
   describe('Main Page Controller Test: ', function () {
     var MainPageController;
 
-    var repositoryList;
-    var mediumPostList;
+    var repositoryList = angular.copy(REPOSITORY_LIST);
+    var mediumPostList = angular.copy(MEDIUM_FEED_PROCESSED);
 
     beforeEach(module('angularApp'));
     beforeEach(inject(function ($controller) {

@@ -35,10 +35,8 @@ module.exports = function (config) {
       // endbower
       'app/source/app.module.js',
       'app/source/**/!(*.spec).js',
-      {
-        pattern: 'app/source/**/*.spec.js',
-        included: true
-      }
+      'test/mocks/**/*.js',
+      'app/source/**/*.spec.js'
     ],
 
     preprocessors: {
