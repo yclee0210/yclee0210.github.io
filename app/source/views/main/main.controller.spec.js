@@ -32,10 +32,11 @@
         var mainPageDomainMatcher = new RegExp('\.github\.io');
         angular.forEach(MainPageController.repositoryList, function (repository) {
           var domain = 'http://' + repository.owner.login + '.github.io';
+
           if (mainPageDomainMatcher.test(repository.name)) {
-            expect(repository.demoPageUrl).toEqual(domain);
+            expect(repository.ghPageUrl).toEqual(domain);
           } else {
-            expect(repository.demoPageUrl).toEqual(domain + '/' + repository.name);
+            expect(repository.ghPageUrl).toEqual(domain + '/' + repository.name);
           }
         })
       });
