@@ -235,27 +235,28 @@ img {
 
 /* line 17, ../../source/views/main/_main-page.scss */
 .grid-25 {
+  min-width: 25%;
   flex: 15;
 }
 
-/* line 22, ../../source/views/main/_main-page.scss */
+/* line 23, ../../source/views/main/_main-page.scss */
 .grid-33 {
   flex: 20;
 }
 
-/* line 27, ../../source/views/main/_main-page.scss */
+/* line 28, ../../source/views/main/_main-page.scss */
 .grid-50 {
   flex: 30;
 }
 
-/* line 32, ../../source/views/main/_main-page.scss */
+/* line 33, ../../source/views/main/_main-page.scss */
 .main, .main-welcome, .main-projects {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* line 38, ../../source/views/main/_main-page.scss */
+/* line 39, ../../source/views/main/_main-page.scss */
 .main-welcome {
   color: rgba(255, 255, 255, 0.75);
   background-image: url("https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=786a67dca1d8791d181bfd90b16240d9");
@@ -263,23 +264,24 @@ img {
   padding-top: 300px;
   height: 800px;
 }
-/* line 45, ../../source/views/main/_main-page.scss */
+/* line 46, ../../source/views/main/_main-page.scss */
 .main-welcome > h1 {
   margin-bottom: 56px;
 }
 
-/* line 50, ../../source/views/main/_main-page.scss */
+/* line 51, ../../source/views/main/_main-page.scss */
 .main-projects {
   padding: 24px;
   margin-bottom: 100px;
 }
-/* line 53, ../../source/views/main/_main-page.scss */
+/* line 54, ../../source/views/main/_main-page.scss */
 .main-projects > h2 {
   margin-bottom: 56px;
 }
-/* line 57, ../../source/views/main/_main-page.scss */
+/* line 58, ../../source/views/main/_main-page.scss */
 .main-projects .project-cards {
   align-content: space-around;
+  justify-content: flex-start;
   padding: 0 48px;
   display: flex;
   flex-direction: row;
@@ -287,7 +289,7 @@ img {
   width: 100%;
 }
 
-/* line 67, ../../source/views/main/_main-page.scss */
+/* line 69, ../../source/views/main/_main-page.scss */
 footer {
   position: fixed;
   left: 0px;
@@ -296,14 +298,14 @@ footer {
   height: 100px;
   background: white;
 }
-/* line 74, ../../source/views/main/_main-page.scss */
+/* line 76, ../../source/views/main/_main-page.scss */
 footer .footer-icon-set {
   text-align: center;
   width: 100%;
   position: relative;
   top: 15%;
 }
-/* line 79, ../../source/views/main/_main-page.scss */
+/* line 81, ../../source/views/main/_main-page.scss */
 footer .footer-icon-set .button-icon {
   margin-left: 4px;
   margin-right: 4px;
@@ -312,11 +314,11 @@ footer .footer-icon-set .button-icon {
   font-size: 24px;
   border-radius: 50%;
 }
-/* line 84, ../../source/views/main/_main-page.scss */
+/* line 86, ../../source/views/main/_main-page.scss */
 footer .footer-icon-set .button-icon i {
   color: rgba(0, 0, 0, 0.6);
 }
-/* line 91, ../../source/views/main/_main-page.scss */
+/* line 93, ../../source/views/main/_main-page.scss */
 footer .footer-copyright {
   position: relative;
   top: 30%;

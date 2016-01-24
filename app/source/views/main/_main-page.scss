@@ -16,6 +16,7 @@ $height-lg: $screen-lg;
 
 .grid-25 {
   @extend .grid;
+  min-width: 25%;
   flex: 15;
 }
 
@@ -56,6 +57,7 @@ $height-lg: $screen-lg;
   margin-bottom: 100px;
   .project-cards {
     align-content: space-around;
+    justify-content: flex-start;
     padding: 0 48px;
     display: flex;
     flex-direction: row;
