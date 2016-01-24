@@ -12,20 +12,43 @@
   function MainPageController(repositoryList, mediumPostList, wordPressPostList) {
     var vm = this;
 
-    vm.repositoryList = setGhPageUrl(repositoryList);
+    vm.repositoryList = setRepositoryList(repositoryList, wordPressPostList);
     vm.mediumPostList = mediumPostList;
-    vm.wordPressPostList = wordPressPostList;
 
-    function setGhPageUrl(repositoryList) {
-      var mainPageDomainMatcher = new RegExp('\.github\.io');
-
+    function setRepositoryList(repositoryList, wordPressPostList) {
       angular.forEach(repositoryList, function (repository) {
-        var domain = 'http://' + repository.owner.login + '.github.io';
-
-        repository.ghPageUrl = mainPageDomainMatcher.test(repository.name) ? domain : domain + '/' + repository.name;
+        setPostsByProjects(repository, wordPressPostList);
+        setGhPageUrl(repository);
+        setWordPressUrl(repository);
       });
 
       return repositoryList;
+    }
+
+    function setGhPageUrl(repository) {
+      var mainPageDomainMatcher = new RegExp('\.github\.io');
+      var domain = 'http://' + repository.owner.login + '.github.io';
+
+      repository.ghPageUrl = mainPageDomainMatcher.test(repository.name) ? domain : domain + '/' + repository.name;
+    }
+
+    function setPostsByProjects(repository, wordPressPostList) {
+      repository.posts = [];
+      angular.forEach(wordPressPostList.posts, function (post) {
+        if (post.categories[repository.name]) {
+          repository.posts.push(post);
+        }
+      });
+
+      repository.postLength = repository.posts.length;
+      repository.blankListStyle = {
+        'height': 96 * (3 - repository.posts.length) + 'px'
+      };
+    }
+
+    function setWordPressUrl(repository) {
+      var wordPressUri = angular.copy(repository.name).replace(/\./g, '-');
+      repository.wordPressUrl = 'https://' + repository.owner.login + '.wordpress.com/category/' + wordPressUri;
     }
   }
 
