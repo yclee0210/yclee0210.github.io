@@ -41,7 +41,7 @@
 
     describe('API request', function () {
       it('should be made to correct URL', function () {
-        $httpBackend.expectGET(getRequestUrl(PROFILE.GITHUB)).respond(200);
+        $httpBackend.expectGET(getRequestUrl(PROFILE.GITHUB.USER_NAME)).respond(200);
 
         github.getRepositories();
 
