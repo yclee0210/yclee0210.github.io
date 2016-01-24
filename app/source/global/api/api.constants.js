@@ -12,6 +12,18 @@
       MEDIUM: {
         URL: 'http://medium.com',
         FEED: '/feed/@yclee0210'
+      },
+      GITHUB: {
+        URL: 'https://api.github.com',
+        USER: '/users',
+        USER_NAME: '/:userName',
+        REPOSITORIES: '/repos'
+      },
+      WORDPRESS: {
+        URL: 'https://public-api.wordpress.com/rest/v1.1/sites',
+        USER_NAME: '/:userName',
+        USER_NAME_SUFFIX: '.wordpress.com',
+        POSTS: '/posts'
       }
     })
 

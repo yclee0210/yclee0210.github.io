@@ -199,7 +199,7 @@ input {
 /* Shadows */
 /* Common Layout related modules */
 /* Application-wide button style */
-/* line 41, ../../source/global/_base.scss */
+/* line 42, ../../source/global/_base.scss */
 button {
   background-color: white;
   border: 0px;
@@ -207,79 +207,87 @@ button {
   padding: 4px 4px 4px 4px;
 }
 
-/* line 48, ../../source/global/_base.scss */
+/* line 49, ../../source/global/_base.scss */
 button:not(:disabled):hover {
   background-color: rgba(0, 0, 0, 0.12);
 }
 
-/* line 51, ../../source/global/_base.scss */
+/* line 52, ../../source/global/_base.scss */
 button:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Image default fit */
-/* line 56, ../../source/global/_base.scss */
+/* line 57, ../../source/global/_base.scss */
 img {
   object-fit: cover;
 }
 
-/* line 7, ../../source/views/landing/_landing.scss */
+/* line 7, ../../source/views/main/_main-page.scss */
 .grid > div, .grid-20 > div, .grid-25 > div, .grid-33 > div, .grid-50 > div {
   margin: 0 auto;
 }
 
-/* line 12, ../../source/views/landing/_landing.scss */
+/* line 12, ../../source/views/main/_main-page.scss */
 .grid-20 {
   flex: 12;
 }
 
-/* line 17, ../../source/views/landing/_landing.scss */
+/* line 17, ../../source/views/main/_main-page.scss */
 .grid-25 {
-  flex: 15;
+  min-width: 25%;
 }
 
-/* line 22, ../../source/views/landing/_landing.scss */
+/* line 22, ../../source/views/main/_main-page.scss */
 .grid-33 {
   flex: 20;
 }
 
-/* line 27, ../../source/views/landing/_landing.scss */
+/* line 27, ../../source/views/main/_main-page.scss */
 .grid-50 {
   flex: 30;
 }
 
-/* line 32, ../../source/views/landing/_landing.scss */
+/* line 32, ../../source/views/main/_main-page.scss */
 .main, .main-welcome, .main-projects {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* line 38, ../../source/views/landing/_landing.scss */
+/* line 38, ../../source/views/main/_main-page.scss */
 .main-welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
   color: rgba(255, 255, 255, 0.75);
   background-image: url("https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=786a67dca1d8791d181bfd90b16240d9");
   background-size: cover;
   padding-top: 300px;
   height: 800px;
+  width: 100%;
+  z-index: -1;
 }
-/* line 45, ../../source/views/landing/_landing.scss */
+/* line 50, ../../source/views/main/_main-page.scss */
 .main-welcome > h1 {
   margin-bottom: 56px;
 }
 
-/* line 50, ../../source/views/landing/_landing.scss */
+/* line 55, ../../source/views/main/_main-page.scss */
 .main-projects {
+  background-color: white;
+  margin-top: 800px;
   padding: 24px;
   margin-bottom: 100px;
 }
-/* line 53, ../../source/views/landing/_landing.scss */
+/* line 60, ../../source/views/main/_main-page.scss */
 .main-projects > h2 {
   margin-bottom: 56px;
 }
-/* line 57, ../../source/views/landing/_landing.scss */
+/* line 64, ../../source/views/main/_main-page.scss */
 .main-projects .project-cards {
   align-content: space-around;
+  justify-content: flex-start;
   padding: 0 48px;
   display: flex;
   flex-direction: row;
@@ -287,7 +295,7 @@ img {
   width: 100%;
 }
 
-/* line 67, ../../source/views/landing/_landing.scss */
+/* line 75, ../../source/views/main/_main-page.scss */
 footer {
   position: fixed;
   left: 0px;
@@ -296,14 +304,14 @@ footer {
   height: 100px;
   background: white;
 }
-/* line 74, ../../source/views/landing/_landing.scss */
+/* line 82, ../../source/views/main/_main-page.scss */
 footer .footer-icon-set {
   text-align: center;
   width: 100%;
   position: relative;
   top: 15%;
 }
-/* line 79, ../../source/views/landing/_landing.scss */
+/* line 87, ../../source/views/main/_main-page.scss */
 footer .footer-icon-set .button-icon {
   margin-left: 4px;
   margin-right: 4px;
@@ -312,11 +320,11 @@ footer .footer-icon-set .button-icon {
   font-size: 24px;
   border-radius: 50%;
 }
-/* line 84, ../../source/views/landing/_landing.scss */
+/* line 92, ../../source/views/main/_main-page.scss */
 footer .footer-icon-set .button-icon i {
   color: rgba(0, 0, 0, 0.6);
 }
-/* line 91, ../../source/views/landing/_landing.scss */
+/* line 99, ../../source/views/main/_main-page.scss */
 footer .footer-copyright {
   position: relative;
   top: 30%;
@@ -340,33 +348,37 @@ footer .footer-copyright {
   margin-bottom: 8px;
 }
 /* line 26, ../../source/global/widgets/card-list/_card-list.scss */
-.card .card-list {
+.card .card-list, .card .card-list-blank {
   width: 100%;
   height: 96px;
   position: relative;
   color: white;
 }
-/* line 31, ../../source/global/widgets/card-list/_card-list.scss */
-.card .card-list div {
+/* line 30, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list a, .card .card-list-blank a {
+  color: inherit;
+}
+/* line 33, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list div, .card .card-list-blank div {
   position: absolute;
   padding: 8px;
 }
-/* line 36, ../../source/global/widgets/card-list/_card-list.scss */
-.card .card-list .tag-set {
+/* line 38, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list .tag-set, .card .card-list-blank .tag-set {
   top: 0;
   left: 0;
   display: flex;
   flex-direction: row;
 }
-/* line 40, ../../source/global/widgets/card-list/_card-list.scss */
-.card .card-list .tag-set .tag {
+/* line 42, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list .tag-set .tag, .card .card-list-blank .tag-set .tag {
   margin-right: 8px;
   padding: 2px;
   position: relative;
   border-radius: 4px;
 }
-/* line 48, ../../source/global/widgets/card-list/_card-list.scss */
-.card .card-list .text {
+/* line 50, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list .text, .card .card-list-blank .text {
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
@@ -377,15 +389,24 @@ footer .footer-copyright {
   bottom: 0;
   right: 0;
 }
-/* line 58, ../../source/global/widgets/card-list/_card-list.scss */
-.card .card-list .text h2, .card .card-list .text p, .card .card-list .text span {
+/* line 60, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list .text h2, .card .card-list-blank .text h2, .card .card-list .text p, .card .card-list-blank .text p, .card .card-list .text span, .card .card-list-blank .text span {
   text-align: right;
 }
-/* line 63, ../../source/global/widgets/card-list/_card-list.scss */
-.card .card-list .text:hover {
+/* line 65, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list .text:hover, .card .card-list-blank .text:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
-/* line 68, ../../source/global/widgets/card-list/_card-list.scss */
+/* line 72, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list-blank .text {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: grey;
+}
+/* line 76, ../../source/global/widgets/card-list/_card-list.scss */
+.card .card-list-blank .text:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* line 80, ../../source/global/widgets/card-list/_card-list.scss */
 .card .card-action-bar {
   padding: 8px;
   display: flex;
@@ -393,7 +414,7 @@ footer .footer-copyright {
   justify-content: flex-end;
   width: 320px;
 }
-/* line 74, ../../source/global/widgets/card-list/_card-list.scss */
+/* line 86, ../../source/global/widgets/card-list/_card-list.scss */
 .card .card-action-bar .button-icon {
   margin-left: 4px;
   margin-right: 4px;
@@ -402,12 +423,12 @@ footer .footer-copyright {
   font-size: 24px;
   border-radius: 50%;
 }
-/* line 79, ../../source/global/widgets/card-list/_card-list.scss */
+/* line 91, ../../source/global/widgets/card-list/_card-list.scss */
 .card .card-action-bar .button-icon i {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 88, ../../source/global/widgets/card-list/_card-list.scss */
+/* line 100, ../../source/global/widgets/card-list/_card-list.scss */
 .card:hover {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19);
 }

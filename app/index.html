@@ -38,15 +38,16 @@
 <!-- build:js({.tmp,app}) scripts/app.js -->
 <!-- module registration -->
 <script src="source/app.module.js"></script>
+<script src="source/app.profile.js"></script>
 <!-- constants -->
 <script src="source/global/layout/shell.constants.js"></script>
 <script src="source/global/api/api.constants.js"></script>
 <!-- config -->
 <!-- routes -->
 <script src="source/app.routes.js"></script>
-<script src="source/views/landing/landing.routes.js"></script>
 <script src="source/global/layout/shell.routes.js"></script>
-<script src="source/views/main/main.routes.js"></script>
+<script src="source/views/main/main-page.routes.js"></script>
+<script src="source/views/playground/playground.routes.js"></script>
 <!-- run script -->
 <!-- directives -->
 <!-- filters -->
@@ -54,8 +55,11 @@
 <!-- services -->
 <!-- api -->
 <script src="source/global/api/medium.rss.js"></script>
+<script src="source/global/api/github.api.js"></script>
+<script src="source/global/api/wordpress.api.js"></script>
 <!-- controllers -->
 <script src="source/global/layout/shell.controller.js"></script>
+<script src="source/views/main/main.controller.js"></script>
 <!-- endbuild -->
 
 </body>

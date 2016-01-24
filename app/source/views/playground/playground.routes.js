@@ -9,9 +9,9 @@
     .module('angularApp')
     .config(function ($stateProvider) {
       $stateProvider
-        .state('app.main', {
-          url: '/main',
-          templateUrl: 'source/views/main/main.html'
+        .state('app.playground', {
+          url: '/playground',
+          templateUrl: 'source/views/playground/playground.html'
         });
     });
 })();
