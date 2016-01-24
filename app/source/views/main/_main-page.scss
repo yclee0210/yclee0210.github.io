@@ -17,7 +17,6 @@ $height-lg: $screen-lg;
 .grid-25 {
   @extend .grid;
   min-width: 25%;
-  flex: 15;
 }
 
 .grid-33 {
