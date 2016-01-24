@@ -14,10 +14,10 @@
         </div>
         <div class="card-list" ng-repeat="post in repository.posts">
           <a ng-href="{{ post.guid }}" target="_blank">
-            <img src="http://lorempixel.com/400/202" width="100%" height="100%"/>
+            <img ng-src="{{ post.featured_image }}" width="100%" height="100%"/>
             <div class="text">
               <h2 class="md-subhead" ng-bind="post.title"></h2>
-              <p class="md-caption" ng-bind-html="post.excerpt | limitTo: 50 "></p>
+              <p class="md-caption" ng-bind-html="(post.excerpt | limitTo: 60) + '...' "></p>
             </div>
             <div class="tag-set">
               <div class="md-caption tag" style="background-color: red" ng-repeat="(key, value) in post.tags">{{ key }}</div>
