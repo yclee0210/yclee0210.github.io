@@ -18,6 +18,12 @@
         USER: '/users',
         USER_NAME: '/:userName',
         REPOSITORIES: '/repos'
+      },
+      WORDPRESS: {
+        URL: 'https://public-api.wordpress.com/rest/v1.1/sites',
+        USER_NAME: '/:userName',
+        USER_NAME_SUFFIX: '.wordpress.com',
+        POSTS: '/posts'
       }
     })
 
