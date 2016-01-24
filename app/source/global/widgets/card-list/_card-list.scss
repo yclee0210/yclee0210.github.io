@@ -27,7 +27,9 @@ $mask-hover: $mask-dark;
     @include card-content(1);
     position: relative;
     color: white;
-
+    a {
+      color: inherit;
+    }
     div {
       @include cover-parent();
       padding: 8px;
@@ -65,6 +67,16 @@ $mask-hover: $mask-dark;
     }
   }
 
+  .card-list-blank {
+    @extend .card-list;
+    .text {
+      background-color: $mask-vlight;
+      color: grey;
+    }
+    .text:hover {
+      background-color: $mask-vlight;
+    }
+  }
   .card-action-bar {
     padding: 8px;
     display: flex;
