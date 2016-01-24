@@ -9,11 +9,12 @@
     .module('angularApp')
     .controller('MainPageController', MainPageController);
 
-  function MainPageController(repositoryList, mediumPostList) {
+  function MainPageController(repositoryList, mediumPostList, wordPressPostList) {
     var vm = this;
 
     vm.repositoryList = setGhPageUrl(repositoryList);
     vm.mediumPostList = mediumPostList;
+    vm.wordPressPostList = wordPressPostList;
 
     function setGhPageUrl(repositoryList) {
       var mainPageDomainMatcher = new RegExp('\.github\.io');
@@ -27,4 +28,6 @@
       return repositoryList;
     }
   }
+
+  MainPageController.$inject = ['repositoryList', 'mediumPostList', 'wordPressPostList'];
 })();

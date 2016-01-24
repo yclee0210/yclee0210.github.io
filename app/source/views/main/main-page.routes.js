@@ -21,6 +21,9 @@
             }],
             mediumPostList: ['mediumFeeds', function (mediumFeeds) {
               return mediumFeeds.getPosts().$promise;
+            }],
+            wordPressPostList: ['wordpress', function (wordpress) {
+              return wordpress.getPosts().$promise;
             }]
           }
         });

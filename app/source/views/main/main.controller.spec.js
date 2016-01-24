@@ -10,12 +10,14 @@
 
     var repositoryList = angular.copy(REPOSITORY_LIST);
     var mediumPostList = angular.copy(MEDIUM_FEED_PROCESSED);
+    var wordPressPostList = angular.copy(WORDPRESS_POST_LIST);
 
     beforeEach(module('angularApp'));
     beforeEach(inject(function ($controller) {
       MainPageController = $controller('MainPageController', {
         repositoryList: repositoryList,
-        mediumPostList: mediumPostList
+        mediumPostList: mediumPostList,
+        wordPressPostList: wordPressPostList
       });
     }));
 
