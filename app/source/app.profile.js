@@ -8,6 +8,15 @@
   angular
     .module('angularApp')
     .constant('PROFILE', {
-      GITHUB: 'yclee0210'
+      GITHUB: {
+        USER_NAME: 'yclee0210',
+        REPO: {
+          BLACK_LIST: [
+            'blog-proj',
+            'django-tutorial',
+            'python-study'
+          ]
+        }
+      }
     });
 })();
