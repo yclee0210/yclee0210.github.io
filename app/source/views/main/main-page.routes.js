@@ -12,7 +12,17 @@
       $stateProvider
         .state('main', {
           url: '/welcome',
-          templateUrl: 'source/views/main/main-page.html'
+          templateUrl: 'source/views/main/main-page.html',
+          controller: 'MainPageController',
+          controllerAs: 'vm',
+          resolve: {
+            repositoryList: ['github', function (github) {
+              return github.getRepositories().$promise;
+            }],
+            mediumPostList: ['mediumFeeds', function (mediumFeeds) {
+              return mediumFeeds.getPosts().$promise;
+            }]
+          }
         });
     });
 })();
