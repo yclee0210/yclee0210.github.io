@@ -16,26 +16,8 @@
       getPosts: {
         method: 'GET',
         url: requestUrl + API_VALUES.WORDPRESS.POSTS,
-        transformResponse: function (response) {
-          return extractMainImage(angular.fromJson(response));
-        }
       }
     });
-  }
-
-  function extractMainImage(content) {
-    angular.forEach(content.posts, function (post) {
-      var imageTag = new RegExp('<img.+src=\\"(.+jpg).+/>');
-      var mainImage = imageTag.exec(post.content)[IMAGE_URL_CAPTURE_GROUP_INDEX];
-      if (mainImage) {
-        post.img = {
-          src: mainImage,
-          width: 400,
-          height: 150
-        };
-      }
-    });
-    return content;
   }
 
   var IMAGE_URL_CAPTURE_GROUP_INDEX = 1;
