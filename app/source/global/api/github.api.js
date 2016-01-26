@@ -28,7 +28,6 @@
   function removeFromList(originalList, blackList) {
     var response = [];
 
-    console.log(originalList);
     angular.forEach(originalList, function (item) {
       if (itemNotInBlackList(item, blackList)) {
         response.push(item);
