@@ -15,12 +15,10 @@
     return $resource(requestUrl, {userName: PROFILE.GITHUB.USER_NAME}, {
       getPosts: {
         method: 'GET',
-        url: requestUrl + API_VALUES.WORDPRESS.POSTS,
+        url: requestUrl + API_VALUES.WORDPRESS.POSTS
       }
     });
   }
-
-  var IMAGE_URL_CAPTURE_GROUP_INDEX = 1;
 
   wordpress.$inject = ['$resource', 'API_VALUES', 'PROFILE'];
 })();
