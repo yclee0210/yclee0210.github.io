@@ -9,12 +9,11 @@
     .module('angularApp')
     .controller('MainPageController', MainPageController);
 
-  function MainPageController(repositoryList, mediumPostList, wordPressPostList, repositoryCard) {
+  function MainPageController(repositoryList, wordPressPostList, repositoryCard) {
     var vm = this;
 
     vm.repositoryList = repositoryCard.setRepositoryList(repositoryList, wordPressPostList);
-    vm.mediumPostList = mediumPostList;
   }
 
-  MainPageController.$inject = ['repositoryList', 'mediumPostList', 'wordPressPostList', 'repositoryCard'];
+  MainPageController.$inject = ['repositoryList', 'wordPressPostList', 'repositoryCard'];
 })();
