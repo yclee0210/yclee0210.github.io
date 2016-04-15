@@ -19,9 +19,6 @@
             repositoryList: ['github', function (github) {
               return github.getRepositories().$promise;
             }],
-            mediumPostList: ['mediumFeeds', function (mediumFeeds) {
-              return mediumFeeds.getPosts().$promise;
-            }],
             wordPressPostList: ['wordpress', function (wordpress) {
               return wordpress.getPosts().$promise;
             }]
