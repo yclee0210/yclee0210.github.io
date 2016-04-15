@@ -63,7 +63,6 @@
     describe('State change to main', function () {
       it('should resolve appropriate lists', function () {
         $httpBackend.expectGET(getGithubRequestUrl(PROFILE.GITHUB.USER_NAME)).respond(SUCCESS, REPOSITORY_LIST);
-        $httpBackend.expectJSONP(getMediumRequestUrl(PROFILE.GITHUB.USER_NAME)).respond(SUCCESS, RAW_MEDIUM_RESPONSE);
         $httpBackend.expectGET(getWordpressRequestUrl(PROFILE.GITHUB.USER_NAME)).respond(SUCCESS, WORDPRESS_POST_LIST);
         $httpBackend.expectGET('source/views/main/main-page.html').respond(SUCCESS);
 
