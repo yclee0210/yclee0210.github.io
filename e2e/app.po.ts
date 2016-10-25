@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class Angular2testPage {
+export class Yclee0210Page {
   navigateTo() {
     return browser.get('/');
   }
