@@ -14,7 +14,7 @@ export class Yclee0210Page {
   }
 
   getMenus() {
-    return element.all(by.repeater('menu in menus'));
+    return element.all(by.css('.navbar-nav li'));
   }
 
   getNthMenuText(index, menus) {

@@ -22,7 +22,7 @@ describe('yclee0210 App', function() {
     let firstMenuIndex = 0;
     let navMenus = page.getMenus();
 
-    expect(page.getNthMenuText(firstMenuIndex, navMenus)).toEqual('Home');
+    expect(page.getNthMenuText(firstMenuIndex, navMenus)).toEqual('HOME');
     expect(page.getNthMenuCssClass(firstMenuIndex, navMenus)).toContain('active');
   });
 });
