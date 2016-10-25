@@ -1,101 +1,31 @@
-# AngularJS Scaffolding
+# Angular2test
 
-## Folder Structure
-    Project/
-      app/
-        mocks/
-        assets/
-          fonts/
-          i18n/
-          images/
-          stylesheets/
-        source/
-          views/
-            view1/
-              main.html
-              main.route.js
-              main.constants.js
-              main.controller.js
-              main.controller.spec.js
-              component1/
-                main.html
-                main.route.js
-                main.constants.js
-                main.controller.js
-                main.controller.spec.js
-          global/
-            layout/
-              header/
-                template.html
-                template.constants.js
-                template.controller.js
-                template.controller.spec.js
-              footer/
-              shell.html
-              shell.constants.js
-              shell.routes.js
-              shell.controller.js
-              shell.controller.spec.js
-            widgets/
-              widget1/
-                template.html
-                template.constants.js
-                template.directive.js
-                template.directive.spec.js
-            api/
-              some.api.js
-              some.api.spec.js
-            directives/
-              some.directive.js
-              some.directive.spec.js
-            factories/
-              some.factory.js
-              some.factory.spec.js
-            services/
-              some.service.js
-              some.service.spec.js
-            filters/
-              some.filter.js
-              some.filter.spec.js
-          app.module.js
-          app.config.js
-          app.run.js
-        index.html
-        favicon.ico
-      test/
-        coverage/
-          unit/
-          e2e/
-        results/
-          unit/
-          e2e/
-        e2e/
-          page-objects/
-          helpers/
-          mocks/
-        .jshintrc
-        karma.conf.js
-        protractor.conf.js
-      profile/
-        local/
-        test/
-        staging/
-        production/
-      bower_components/
-      node_modules/
-      dist/
-        assets/
-        scripts/
-        index.html
-        favicon.ico
-        README.md
-      .bowerrc
-      .editorconfig
-      .gitignore
-      .jshintrc
-      .travis.yml
-      bower.json
-      deploy.sh
-      Gruntfile.js
-      package.json
-      README.md
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
+
+## Development server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Deploying to Github Pages
+
+Run `ng github-pages:deploy` to deploy to Github Pages.
+
+## Further help
+
+To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
