@@ -1,0 +1,75 @@
+/* Layers */
+$layer-base: 0;
+$layer-header: 1000;
+$layer-modal: 2000;
+
+body {
+  background: $background;
+}
+
+.header {
+  background: $primary;
+  height: 4rem;
+  padding: 0.5rem;
+  width: 100%;
+  z-index: $layer-header;
+
+  img.profile {
+    background: $light;
+    border-radius: 50%;
+    float: right;
+    height: 3rem;
+    margin: 0 0.5rem;
+    width: 3rem;
+  }
+
+  div.profile {
+    color: $light;
+    float: right;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    line-height: 2rem;
+  }
+}
+
+.container {
+  margin: 1rem auto;
+  width: 1236px;
+}
+
+main {
+  margin: 0 1rem;
+  width: 500px;
+  display: block;
+}
+
+aside {
+  margin: 0 1rem;
+  width: 320px;
+  display: block;
+}
+
+.card-header {
+  height: 3rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.card-content {
+  background: $light;
+  padding: 1rem;
+  width: 100%;
+}
+
+.box-primary {
+  background: $primary;
+}
+
+.box-accent {
+  background: $accent;
+}
+
+.box-tertiary {
+  background: $tertiary;
+  color: $light;
+}
