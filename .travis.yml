@@ -36,7 +36,7 @@ deploy:
   github_token: $GH_TOKEN
   on:
     branch: develop
-    condition: $TRAVIS_PULL_REQUESTION = false
+    condition: $TRAVIS_PULL_REQUEST = false
   local_dir: dist
   target_branch: master
 
