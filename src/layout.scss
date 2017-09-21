@@ -7,30 +7,7 @@ body {
   background: $background;
 }
 
-.header {
-  background: $primary;
-  height: 4rem;
-  padding: 0.5rem;
-  width: 100%;
-  z-index: $layer-header;
 
-  img.profile {
-    background: $light;
-    border-radius: 50%;
-    float: right;
-    height: 3rem;
-    margin: 0 0.5rem;
-    width: 3rem;
-  }
-
-  div.profile {
-    color: $light;
-    float: right;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    line-height: 2rem;
-  }
-}
 
 .container {
   margin: 1rem auto;
