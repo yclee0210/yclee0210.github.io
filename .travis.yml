@@ -28,7 +28,7 @@ before_script:
 - npm install
 - ng build
 
-script: 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ng test --watch=false; fi'
+script: 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then ng test --watch=false; fi'
 
 deploy:
   provider: pages
