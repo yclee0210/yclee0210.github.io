@@ -28,4 +28,16 @@ before_script:
 - npm install
 - ng build
 
-script: ng test --watch=false
+script: 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ng test --watch=false; fi'
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN
+  on:
+    branch: develop
+    condition: $TRAVIS_PULL_REQUESTION = false
+  local_dir: dist
+  target_branch: master
+
+
